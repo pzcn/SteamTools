@@ -36,21 +36,21 @@ jobs:
         with:
           dotnet-version: 7.0.x
 
-      - name: Install Android SDK
-        if: ${{ matrix.os != 'aigio-win10ltsc-vm' }}
-        run: dotnet workload install android
+#      - name: Install Android SDK
+#        if: ${{ matrix.os != 'aigio-win10ltsc-vm' }}
+#        run: dotnet workload install android
 
-      - name: Install iOS SDK
-        if: ${{ matrix.os != 'aigio-win10ltsc-vm' }}
-        run: dotnet workload install ios
+#      - name: Install iOS SDK
+#        if: ${{ matrix.os != 'aigio-win10ltsc-vm' }}
+#        run: dotnet workload install ios
 
-      - name: Install macOS SDK
-        if: ${{ matrix.os != 'aigio-win10ltsc-vm' }}
-        run: dotnet workload install macos
+#      - name: Install macOS SDK
+#        if: ${{ matrix.os != 'aigio-win10ltsc-vm' }}
+#        run: dotnet workload install macos
 
-      - name: Install Mac Catalyst SDK
-        if: ${{ matrix.os != 'aigio-win10ltsc-vm' }}
-        run: dotnet workload install maccatalyst
+#      - name: Install Mac Catalyst SDK
+#        if: ${{ matrix.os != 'aigio-win10ltsc-vm' }}
+#        run: dotnet workload install maccatalyst
 
       - name: Install Maui
         if: ${{ matrix.os != 'aigio-win10ltsc-vm' }}
@@ -86,8 +86,7 @@ jobs:
         with:
           name: windows-build
           path: |
-            src/SteamTools/bin/Release/net5.0-windows/*
-            src/SteamTools/bin/Release/net6.0-windows/*
+            D:\a\SteamTools\SteamTools\src\SteamTools\bin\Release\*
 
 #  release:
 #    name: Release
