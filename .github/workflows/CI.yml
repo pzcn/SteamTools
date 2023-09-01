@@ -86,7 +86,8 @@ jobs:
         with:
           name: windows-build
           path: |
-            D:\a\SteamTools\SteamTools\src\SteamTools\bin\Release\*
+            src\SteamTools\bin\Release\*
+            src\ST.Client.Desktop.Avalonia.App\bin\*
 
 #  release:
 #    name: Release
