@@ -16,8 +16,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-#        os: [ windows-latest ]
-        os: [ aigio-win10ltsc-vm ]
+        os: [ windows-latest ]
         
     steps:
       - name: Checkout repository
