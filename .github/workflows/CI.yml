@@ -81,6 +81,14 @@ jobs:
 
       - name: Test
         run: dotnet test src/BD.WTTS.UnitTest/BD.WTTS.UnitTest.csproj -c Release -p:GeneratePackageOnBuild=false --nologo -v q /property:WarningLevel=1 
+     
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: windows-build
+          path: |
+            src/SteamTools/bin/Release/net5.0-windows/*
+            src/SteamTools/bin/Release/net6.0-windows/*
 
 #  release:
 #    name: Release
